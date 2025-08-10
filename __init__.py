@@ -13,7 +13,7 @@ def FindIOCTLDispatcher(bv):
         if "MajorFunction" in str(inst):
             print(f"{hex(inst.address)}: {str(inst)}")
             func = str(inst.src)
-            break
+            continue
 
     print(" ")
     print("Possible IOCTL Comparisons")
